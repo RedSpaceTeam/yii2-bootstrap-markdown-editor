@@ -21,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "redspace\\bootstrap-markdown-editor\\": ""
+      "redspace\\markdown\\": ""
     }
   }
 }
