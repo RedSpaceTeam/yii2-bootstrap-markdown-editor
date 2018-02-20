@@ -51,6 +51,10 @@ class BootstrapMarkdownEditor extends InputWidget{
         BootstrapMarkdownEditorAsset::register($this->getView());
 
         echo Html::beginTag('div', $this->containerOptions);
+
+        Html::addCssClass($this->options, 'markdown-editor');
+
+
         if ($this->hasModel()) {
             echo Html::activeTextarea($this->model, $this->attribute, $this->options);
         } else {
@@ -58,7 +62,6 @@ class BootstrapMarkdownEditor extends InputWidget{
         }
 
         echo Html::endTag('div');
-
 
         /*
         $js = [
